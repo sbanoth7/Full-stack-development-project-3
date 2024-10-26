@@ -1,0 +1,82 @@
+/* Keyframes for gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px); 
+  position: sticky; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  padding: 10px 20px;
+}
+
+/* Add a margin to the top of the body content to avoid overlap with the navbar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(45deg, rgba(240, 240, 240, 0.8), rgba(224, 224, 224, 0.8)),
+    url('../public/images/silver J B.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: gradient 15s ease infinite;
+  color: #333; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-top: 80px; /* Adjusted to account for the navbar height */
+}
+
+/* Additional styles */
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 20px;
+}
+
+/* Styles for buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #6200ea; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3700b3; 
+}
+
+/* Add some animation to product cards */
+.product-card {
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+  transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.product-card:hover {
+  transform: scale(1.05); 
+}
